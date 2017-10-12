@@ -244,6 +244,7 @@ module.exports = {
     ], // Declaration-block-properties-order.
     */
 
+    'indentation':       2,
     'max-line-length':   120,
     'max-nesting-depth': 4,
 
