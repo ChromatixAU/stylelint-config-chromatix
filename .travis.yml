@@ -1,0 +1,47 @@
+language: node_js
+
+# We need sudo as some of our externally-called scripts may need to install packages.
+sudo: required
+
+# Speed up subsequent builds by caching dependencies.
+cache:
+  directories:
+    - node_modules
+
+# Skip builds on version tags, as they'll occur on the branch anyway.
+branches:
+  except:
+    - /^v[0-9]\.[0-9]\.[0-9]/
+
+# Build against common versions.
+node_js:
+  - node
+  - iojs
+  - lts/*
+
+# Save time by only cloning the most recent commit.
+git:
+  depth: 1
+
+matrix:
+  allow_failures:
+
+    # Iojs is for advisory purposes only for now; we can allow this to fail.
+    - node_js: iojs
+
+  # Allow build to finish before our allowed failures run.
+  fast_finish: true
+
+install:
+  - yarn
+
+script:
+  - yarn lint
+  - yarn test
+
+notifications:
+  email: false
+  webhooks:
+    urls:
+      - https://chr-cicd.herokuapp.com/hooks/travis.php
+    on_start: always
