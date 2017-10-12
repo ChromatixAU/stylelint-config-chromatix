@@ -2,8 +2,6 @@
 
 Shareable config for stylelint for custom standards at [Chromatix Digital Agency](https://www.chromatix.com.au).
 
-# Coming soon. The following is probably not correct yet and is based on a template. DO NOT USE THIS YET.
-
 Based heavily on the [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/stylelint-config-wordpress/) but with some of our own too. Most notably, two spaces instead of tabs. Soz.
 
 **This config is still in development.** If you have suggestions for improvement or if you disagree with anything this config makes you do, feel free to file an issue.
@@ -23,8 +21,8 @@ Install locally to one project:
 Add this to your `.stylelintrc.js` file:
 
     module.exports = {
-      "extends": [
-        "@chromatix/chromatix"
+      'extends': [
+        require.resolve( '@chromatix/stylelint-config-chromatix' )
       ]
     };
 
