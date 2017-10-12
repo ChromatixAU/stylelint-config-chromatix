@@ -1,35 +1,39 @@
 {
-  "name": "@chromatix/eslint-config-chromatix",
-  "version": "0.0.4",
-  "description": "Chromatix custom config for ESLint. Based heavily on the WordPress Coding Standards but with some of our own too.",
-  "homepage": "https://github.com/ChromatixAU/eslint-config-chromatix#readme",
+  "name": "@chromatix/stylelint-config-chromatix",
+  "version": "0.0.1",
+  "description": "Chromatix custom config for stylelint. Based heavily on the WordPress Coding Standards but with some of our own too.",
+  "homepage": "https://github.com/ChromatixAU/stylelint-config-chromatix#readme",
   "author": "Tim Malone <tim.malone@chromatix.com.au>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChromatixAU/eslint-config-chromatix.git"
+    "url": "git+https://github.com/ChromatixAU/stylelint-config-chromatix.git"
   },
   "bugs": {
-    "url": "https://github.com/ChromatixAU/eslint-config-chromatix/issues"
+    "url": "https://github.com/ChromatixAU/stylelint-config-chromatix/issues"
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/*.js",
+    "lint": "stylelint **/*.scss",
     "test": "jest --verbose --coverage"
   },
   "jest": {
-    "testMatch": [ "**/tests/**/*.js" ]
+    "testMatch": [
+      "**/tests/**/*.js"
+    ]
   },
   "keywords": [
-    "eslint",
-    "eslint-config",
+    "stylelint",
+    "stylelint-config",
     "wordpress",
     "chromatix",
     "javascript"
   ],
   "dependencies": {
-    "eslint": "^4.8.0",
-    "eslint-config-wordpress": "^2.0.0"
+    "stylelint": "^8.2.0",
+    "stylelint-config-sass-guidelines": "^3.1.0",
+    "stylelint-config-wordpress": "^12.0.0",
+    "stylelint-scss": "^2.1.0"
   },
   "devDependencies": {
     "is-plain-obj": "^1.1.0",
