@@ -66,6 +66,9 @@ module.exports = {
       }
     ],
 
+    // TODO: declaration-block-properties-order has been deprecated, and needs replacement.
+    // @see https://github.com/stylelint/stylelint/issues/2010
+    /*
     'declaration-block-properties-order': [
 
       // WordPress says: display, positioning, box model, colours/typography, other.
@@ -245,13 +248,18 @@ module.exports = {
       'text-rendering',
       'pointer-events',
 
-    ],
+    ], // Declaration-block-properties-order.
+    */
 
     'max-nesting-depth': 4,
     'selector-max-compound-selectors': 4,
     'max-line-length': 120,
     'no-eol-whitespace': [ true, { ignore: 'empty-lines' } ],
-    'rule-nested-empty-line-before': null,
+
+    // TODO: This rule no longer exists in stylelint and may need to be replaced.
+    // @see https://github.com/stylelint/stylelint/issues/2229
+    //'rule-nested-empty-line-before': null,
+
     'scss/at-mixin-argumentless-call-parentheses': 'never',
 
     // This was useful, but it's currently applying to eg. &.test {} as well.
