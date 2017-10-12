@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help: http://keepachangelog.com/
 [Unreleased changes]
 
+## [0.0.3] - 2017-10-13
+
+- Fixed indentation rule to require 2 spaces instead of tabs
+- Fixed devDependencies for linting, as well as ignoring test coverage reports
+
 ## [0.0.2] - 2017-10-13
 
 - Added linting & CI
