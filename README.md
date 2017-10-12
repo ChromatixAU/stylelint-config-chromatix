@@ -1,6 +1,6 @@
 # stylelint-config-chromatix
 
-Shareable config for stylelint for custom standards at [Chromatix Digital Agency](https://www.chromatix.com.au).
+Shareable config for [stylelint](https://stylelint.io/) for custom standards at [Chromatix Digital Agency](https://www.chromatix.com.au).
 
 Based heavily on the [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/stylelint-config-wordpress/) but with some of our own too. Most notably, two spaces instead of tabs. Soz.
 
@@ -15,6 +15,8 @@ Install globally to use on any project:
 Install locally to one project:
 
     npm install --save-dev @chromatix/stylelint-config-chromatix
+
+You'll also need to have (stylelint)[https://stylelint.io] installed in the same manner.
 
 ## Usage
 
@@ -31,7 +33,7 @@ Then:
   Run `stylelint **/*.scss`.
 
 * Using locally?<br />
-  Add `"lint": "stylelint **/*.scss"` to your `package.json`'s `"scripts"` section, then run `npm run lint`
+  Add `"lint:sass": "stylelint **/*.scss"` to your `package.json`'s `"scripts"` section, then run `npm run lint:sass`
 
 ## License
 
