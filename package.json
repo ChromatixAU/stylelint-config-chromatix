@@ -14,7 +14,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint **/*.js *.js",
+    "lint": "eslint --ignore-pattern coverage/ **/*.js *.js",
     "test": "jest --verbose --coverage"
   },
   "jest": {
@@ -36,6 +36,8 @@
     "stylelint-scss": "^2.1.0"
   },
   "devDependencies": {
+    "@chromatix/eslint-config-chromatix": "^0.0.5",
+    "eslint": "^4.8.0",
     "is-plain-obj": "^1.1.0",
     "jest": "^21.2.1"
   }
