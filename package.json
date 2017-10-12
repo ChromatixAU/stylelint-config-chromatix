@@ -1,0 +1,38 @@
+{
+  "name": "@chromatix/eslint-config-chromatix",
+  "version": "0.0.4",
+  "description": "Chromatix custom config for ESLint. Based heavily on the WordPress Coding Standards but with some of our own too.",
+  "homepage": "https://github.com/ChromatixAU/eslint-config-chromatix#readme",
+  "author": "Tim Malone <tim.malone@chromatix.com.au>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChromatixAU/eslint-config-chromatix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChromatixAU/eslint-config-chromatix/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage"
+  },
+  "jest": {
+    "testMatch": [ "**/tests/**/*.js" ]
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "wordpress",
+    "chromatix",
+    "javascript"
+  ],
+  "dependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-wordpress": "^2.0.0"
+  },
+  "devDependencies": {
+    "is-plain-obj": "^1.1.0",
+    "jest": "^21.2.1"
+  }
+}
