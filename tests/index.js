@@ -9,7 +9,7 @@ test( 'index.js', () => {
 
   expect( isPlainObj( config ) ).toBe( true );
   expect( Array.isArray( config.extends ) ).toBe( true );
-  expect( isPlainObj( config.env ) ).toBe( true );
+  expect( Array.isArray( config.plugins ) ).toBe( true );
   expect( isPlainObj( config.rules ) ).toBe( true );
 
 });

@@ -4,22 +4,15 @@
 
 module.exports = {
 
-  plugins: [
-
-    // @see https://www.npmjs.com/package/stylelint-scss
-    'stylelint-scss',
-
-  ],
-
+  // @see https://www.npmjs.com/package/stylelint-config-sass-guidelines
+  // @see https://www.npmjs.com/package/stylelint-config-wordpress
   extends: [
-
-    // @see https://www.npmjs.com/package/stylelint-config-sass-guidelines
     'stylelint-config-sass-guidelines',
-
-    // @see https://www.npmjs.com/package/stylelint-config-wordpress
-    'stylelint-config-wordpress',
-
+    'stylelint-config-wordpress'
   ],
+
+  // @see https://www.npmjs.com/package/stylelint-scss
+  plugins: [ 'stylelint-scss' ],
 
   rules: {
 
@@ -32,6 +25,10 @@ module.exports = {
     // Set a rule to 'null' to disable it, NOT to false!
     // All rules are initially disabled by default, BUT we do need to set null on those we want to
     // override still, because our extends and plugins above will be enabling some of them.
+
+    // Override stylelint-config-sass-guidelines disallowing @debug, as it can be helpful to warn
+    // of errors in mixin arguments!
+    'at-rule-blacklist': [],
 
     'at-rule-empty-line-before': null,
 
@@ -51,10 +48,6 @@ module.exports = {
         ]
       }
     ],
-
-    // Override stylelint-config-sass-guidelines disallowing @debug, as it can be helpful to warn
-    // of errors in mixin arguments!
-    'at-rule-blacklist': [],
 
     'block-closing-brace-newline-after': [
       'always',
@@ -251,19 +244,25 @@ module.exports = {
     ], // Declaration-block-properties-order.
     */
 
+    'max-line-length':   120,
     'max-nesting-depth': 4,
-    'selector-max-compound-selectors': 4,
-    'max-line-length': 120,
-    'no-eol-whitespace': [ true, { ignore: 'empty-lines' } ],
+
+    'no-eol-whitespace': [
+      true,
+      {
+        ignore: 'empty-lines'
+      }
+    ],
 
     // TODO: This rule no longer exists in stylelint and may need to be replaced.
     // @see https://github.com/stylelint/stylelint/issues/2229
     //'rule-nested-empty-line-before': null,
 
     'scss/at-mixin-argumentless-call-parentheses': 'never',
+    'selector-max-compound-selectors':             4,
 
     // This was useful, but it's currently applying to eg. &.test {} as well.
-    'selector-no-qualifying-type': null,
+    'selector-no-qualifying-type': null
 
   } // Rules.
 }; // Module.exports
