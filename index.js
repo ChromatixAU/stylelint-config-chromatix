@@ -1,241 +1,261 @@
 'use strict';
 
-const INDENTATION_SPACES = 2;
+// TODO: This config is NOT complete or fully tested yet! DO NOT USE.
 
 module.exports = {
 
-  env: {
-    browser: true,
-    es6:     true,
-    jest:    true,
-    jquery:  true,
-    node:    true
-  },
+  plugins: [
 
-  // @see https://eslint.org/docs/rules/{NAME-OF-RULE}
-  // @see https://github.com/WordPress-Coding-Standards/eslint-config-wordpress/blob/master/index.js
-  // @see https://github.com/WordPress-Coding-Standards/eslint-plugin-wordpress/tree/master/lib
+    // @see https://www.npmjs.com/package/stylelint-scss
+    'stylelint-scss',
+
+  ],
+
   extends: [
-    'eslint:recommended',
-    'wordpress'
+
+    // @see https://www.npmjs.com/package/stylelint-config-sass-guidelines
+    'stylelint-config-sass-guidelines',
+
+    // @see https://www.npmjs.com/package/stylelint-config-wordpress
+    'stylelint-config-wordpress',
+
   ],
 
   rules: {
 
-    // Coming soon.
-    //
-    //'no-var':       [ 'error' ],
-    //'prefer-const': [ 'error' ],
-    //
-    // @see https://www.npmjs.com/package/eslint-plugin-dollar-sign
-    //'dollar-sign/dollar-sign': [2, 'ignoreProperties'],
+    // @see http://stylelint.io/user-guide/rules/
 
-    // Rule categories:
-    // - Best practices (and quality code).
-    // - Documentation.
-    // - Indentation.
-    // - Handled elsewhere.
-    // - Node safety.
-    // - Purely helpful.
-    // - Security.
-    // - Stylistic.
-    // - UX.
-    // - Variables.
+    // If the Sass Guidelines & WordPress guidelines disagree, WordPress wins.
+    // If we think something is incorrect, really stupid, or just doesn't work, we can override it
+    // below.
 
-    'array-bracket-newline': [ // Stylistic.
-      'error',
+    // Set a rule to 'null' to disable it, NOT to false!
+    // All rules are initially disabled by default, BUT we do need to set null on those we want to
+    // override still, because our extends and plugins above will be enabling some of them.
+
+    'at-rule-empty-line-before': null,
+
+    // Ignore common Sass at-rules.
+    'at-rule-no-unknown': [
+      true,
       {
-        minItems: 2
+        ignoreAtRules: [
+          'content',
+          'for',
+          'include',
+          'mixin',
+          'if',
+          'elseif',
+          'else',
+          'debug'
+        ]
       }
     ],
 
-    'array-callback-return': [ 'warn' ], // Purely helpful.
+    // Override stylelint-config-sass-guidelines disallowing @debug, as it can be helpful to warn
+    // of errors in mixin arguments!
+    'at-rule-blacklist': [],
 
-    'array-element-newline': [ // Stylistic.
-      'error',
-      'always'
-    ],
-
-    'callback-return': [ 'error' ], // Node safety.
-
-    'capitalized-comments': [ // Documentation.
-      'warn',
+    'block-closing-brace-newline-after': [
       'always',
       {
-        ignoreConsecutiveComments: true
+        ignoreAtRules: [
+          'if',
+          'else'
+        ]
       }
     ],
 
-    'complexity': [ // Best practices.
-      'error',
-      {
-        max: 20
-      }
+    'declaration-block-properties-order': [
+
+      // WordPress says: display, positioning, box model, colours/typography, other.
+      // This is based directly on the examples used in grunt-wp-css.
+      // @see https://github.com/cedaro/grunt-wp-css/blob/develop/tasks/config/default.json
+
+      // Display.
+      'display',
+      'visibility',
+      'float',
+      'clear',
+      'overflow',
+      'overflow-x',
+      'overflow-y',
+      'clip',
+      'zoom',
+      'flex',
+
+      // Positioning.
+      'position',
+      'z-index',
+      'top',
+      'right',
+      'bottom',
+      'left',
+
+      // Box model.
+      'box-sizing',
+      'width',
+      'min-width',
+      'max-width',
+      'height',
+      'min-height',
+      'max-height',
+      'margin',
+      'margin-top',
+      'margin-right',
+      'margin-bottom',
+      'margin-left',
+      'padding',
+      'padding-top',
+      'padding-right',
+      'padding-bottom',
+      'padding-left',
+      'border',
+      'border-width',
+      'border-style',
+      'border-color',
+      'border-top',
+      'border-top-width',
+      'border-top-style',
+      'border-top-color',
+      'border-right',
+      'border-right-width',
+      'border-right-style',
+      'border-right-color',
+      'border-bottom',
+      'border-bottom-width',
+      'border-bottom-style',
+      'border-bottom-color',
+      'border-left',
+      'border-left-width',
+      'border-left-style',
+      'border-left-color',
+      'border-radius',
+      'border-top-left-radius',
+      'border-top-right-radius',
+      'border-bottom-right-radius',
+      'border-bottom-left-radius',
+      'border-image',
+      'border-image-source',
+      'border-image-slice',
+      'border-image-width',
+      'border-image-outset',
+      'border-image-repeat',
+      'table-layout',
+      'empty-cells',
+      'caption-side',
+      'border-spacing',
+      'border-collapse',
+
+      // Colors/Typography.
+      'outline',
+      'outline-width',
+      'outline-style',
+      'outline-color',
+      'outline-offset',
+      'opacity',
+      'filter',
+      'color',
+      'background',
+      'background-color',
+      'background-image',
+      'background-repeat',
+      'background-attachment',
+      'background-position',
+      'background-position-x',
+      'background-position-y',
+      'background-clip',
+      'background-origin',
+      'background-size',
+      'box-decoration-break',
+      'box-shadow',
+      'text-shadow',
+      'font',
+      'font-family',
+      'src',
+      'font-size',
+      'font-weight',
+      'font-style',
+      'font-variant',
+      'font-size-adjust',
+      'font-stretch',
+      'font-effect',
+      'font-emphasize',
+      'font-emphasize-position',
+      'font-emphasize-style',
+      'font-smooth',
+      'line-height',
+      'text-align',
+      'text-align-last',
+      'vertical-align',
+      'white-space',
+      'text-decoration',
+      'text-emphasis',
+      'text-emphasis-color',
+      'text-emphasis-style',
+      'text-emphasis-position',
+      'text-indent',
+      'text-justify',
+      'letter-spacing',
+      'word-spacing',
+      'text-outline',
+      'text-transform',
+      'text-wrap',
+      'text-overflow',
+      'text-overflow-ellipsis',
+      'text-overflow-mode',
+      'word-wrap',
+      'word-break',
+      'tab-size',
+      'hyphens',
+
+      // Other.
+      'list-style',
+      'list-style-position',
+      'list-style-type',
+      'list-style-image',
+      'content',
+      'quotes',
+      'counter-reset',
+      'counter-increment',
+      'resize',
+      'cursor',
+      'user-select',
+      'nav-index',
+      'nav-up',
+      'nav-right',
+      'nav-down',
+      'nav-left',
+      'transition',
+      'transition-delay',
+      'transition-timing-function',
+      'transition-duration',
+      'transition-property',
+      'transform',
+      'transform-origin',
+      'animation',
+      'animation-name',
+      'animation-duration',
+      'animation-play-state',
+      'animation-timing-function',
+      'animation-delay',
+      'animation-iteration-count',
+      'animation-direction',
+      'backface-visibility',
+      'text-rendering',
+      'pointer-events',
+
     ],
 
-    'dot-location': [ // Stylistic.
-      'error',
-      'property'
-    ],
+    'max-nesting-depth': 4,
+    'selector-max-compound-selectors': 4,
+    'max-line-length': 120,
+    'no-eol-whitespace': [ true, { ignore: 'empty-lines' } ],
+    'rule-nested-empty-line-before': null,
+    'scss/at-mixin-argumentless-call-parentheses': 'never',
 
-    'eqeqeq': [ // Best practices.
-      'error',
-      'always'
-    ],
-
-    'guard-for-in':        [ 'error' ], // Best practices.
-    'handle-callback-err': [ 'error' ], // Node safety.
-
-    'id-length': [ // Variables.
-      'error',
-      {
-        max: 25,
-        min: 2
-      }
-    ],
-
-    // Indentation.
-    // @see https://eslint.org/docs/rules/indent
-    'indent': [
-      'error',
-      INDENTATION_SPACES,
-      {
-        flatTernaryExpressions: true,
-        SwitchCase:             1,
-
-        VariableDeclarator: {
-          const: 3,
-          let:   2,
-          var:   2
-        }
-      }
-    ],
-
-    'key-spacing': [ // Stylistic.
-      'error',
-      {
-        'align': {
-          afterColon:  true,
-          beforeColon: false,
-          on:          'value'
-        }
-      }
-    ],
-
-    'linebreak-style': [ 'off' ], // Handled by git.
-
-    'lines-around-comment': [ // Documentation.
-      'warn',
-      {
-        beforeBlockComment: true,
-        beforeLineComment:  true
-      }
-    ],
-
-    'max-depth': [ // Best practices.
-      'error',
-      {
-        max: 3
-      }
-    ],
-
-    'max-len': [ // Stylistic.
-      'error',
-      {
-        code:       100,
-        ignoreUrls: true,
-        tabWidth:   2
-      }
-    ],
-
-    'max-lines': [ // Stylistic.
-      'error',
-      {
-        max:            800,
-        skipBlankLines: false,
-        skipComments:   false
-      }
-    ],
-
-    'max-nested-callbacks': [ // Best practices.
-      'error',
-      {
-        max: 3
-      }
-    ],
-
-    'max-params': [ // Best practices.
-      'error',
-      {
-        max: 3
-      }
-    ],
-
-    'max-statements': [ // Best practices.
-      'error',
-      {
-        max: 15
-      }
-    ],
-
-    'max-statements-per-line': [ 'error' ], // Stylistic.
-
-    'no-alert':              [ 'error' ], // UX.
-    'no-array-constructor':  [ 'error' ], // Stylistic.
-    'no-buffer-constructor': [ 'error' ], // Node safety.
-    'no-console':            [ 'off' ], // Handled by strip-debug during minify for prod.
-    'no-empty-function':     [ 'error' ], // Stylistic.
-    'no-eq-null':            [ 'error' ], // Best practices.
-    'no-eval':               [ 'error' ], // Security.
-    'no-implicit-coercion':  [ 'error' ], // Best practices.
-    'no-implied-eval':       [ 'error' ], // Security.
-    'no-lone-blocks':        [ 'error' ], // Stylistic.
-    'no-lonely-if':          [ 'error' ], // Stylistic.
-    'no-loop-func':          [ 'error' ], // Best practices.
-    'no-magic-numbers':      [ 'error' ], // Best practices.
-    'no-mixed-requires':     [ 'error' ], // Node safety.
-    'no-multi-spaces':       [ 'error' ], // Stylistic.
-    'no-multi-str':          [ 'error' ], // Stylistic.
-
-    'no-multiple-empty-lines': [ // Stylistic.
-      'error',
-      {
-        max:    1,
-        maxBOF: 1,
-        maxEOF: 1
-      }
-    ],
-    'no-negated-condition':    [ 'error' ], // Stylistic.
-    'no-new-object':           [ 'error' ], // Stylistic.
-    'no-param-reassign':       [ 'error' ], // Best practices.
-    'no-path-concat':          [ 'error' ], // Node safety.
-    'no-plusplus':             [ 'error' ], // Best practices.
-    'no-process-env':          [ 'error' ], // Node safety.
-    'no-process-exit':         [ 'error' ], // Node safety.
-    'no-return-assign':        [ 'error' ], // Best practices.
-    'no-self-compare':         [ 'error' ], // Best practices.
-    'no-tabs':                 [ 'error' ], // Stylistic.
-    'no-unused-expressions':   [ 'error' ], // Best practices.
-    'no-use-before-define':    [ 'error' ], // Variables.
-    'no-warning-comments':     [ 'warn' ], // Documentation.
-    'object-property-newline': [ 'error' ], // Stylistic.
-    'require-jsdoc':           [ 'warn' ], // Documentation.
-
-    'sort-keys': [ // Stylistic.
-      'error',
-      'asc',
-      {
-        caseSensitive: false,
-        natural:       true
-      }
-    ],
-
-    'strict': [ // Best practices.
-      'error',
-      'safe'
-    ],
-
-    'valid-jsdoc': [ 'warn' ] // Documentation.
+    // This was useful, but it's currently applying to eg. &.test {} as well.
+    'selector-no-qualifying-type': null,
 
   } // Rules.
 }; // Module.exports
