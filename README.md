@@ -16,7 +16,7 @@ Install locally to one project:
 
     npm install --save-dev @chromatix/stylelint-config-chromatix
 
-You'll also need to have (stylelint)[https://stylelint.io] installed in the same manner.
+You'll also need to have [stylelint](https://stylelint.io) installed in the same manner.
 
 ## Usage
 
@@ -29,10 +29,10 @@ Add this to your `.stylelintrc.js` file:
     };
 
 Then:
-* Using globally?<br />
+* Using globally?  
   Run `stylelint **/*.scss`.
 
-* Using locally?<br />
+* Using locally?  
   Add `"lint:sass": "stylelint **/*.scss"` to your `package.json`'s `"scripts"` section, then run `npm run lint:sass`
 
 ## License
