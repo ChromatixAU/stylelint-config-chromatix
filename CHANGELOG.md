@@ -1,8 +1,14 @@
 # Change Log
+
 All notable changes to this project will be documented in this file  
 This project adheres to [Semantic Versioning](http://semver.org/)  
-Formatting help: http://keepachangelog.com/  
+Formatting help at [keepachangelog.com](http://keepachangelog.com/)  
 [Unreleased changes]
+
+## [0.1.1] - 2017-10-17
+
+- Fixed the rule allowing up to 120 chars on a line; it now allows 100 to match our other languages.
+- Fixed the rule prohibiting spaces inside parens in pseudo class selectors - it now matches other rules & other languages by requiring spaces.
 
 ## [0.1.0] - 2017-10-16
 
