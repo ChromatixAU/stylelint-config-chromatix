@@ -40,6 +40,7 @@ module.exports = {
       true,
       {
         ignoreAtRules: [
+          'at-root',
           'content',
           'debug',
           'else',
