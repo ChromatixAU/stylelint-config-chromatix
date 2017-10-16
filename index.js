@@ -43,13 +43,15 @@ module.exports = {
       {
         ignoreAtRules: [
           'content',
+          'debug',
+          'else',
+          'elseif',
           'for',
+          'function',
+          'if',
           'include',
           'mixin',
-          'if',
-          'elseif',
-          'else',
-          'debug'
+          'return'
         ]
       }
     ],
