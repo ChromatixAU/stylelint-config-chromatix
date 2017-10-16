@@ -66,13 +66,36 @@ module.exports = {
       }
     ],
 
-    // TODO: declaration-block-properties-order has been deprecated, and needs replacement.
-    // @see https://github.com/stylelint/stylelint/issues/2010
-    /*
-    'declaration-block-properties-order': [
+    'function-parentheses-space-inside':      'always',
+    'indentation':                            2,
+    'max-line-length':                        120,
+    'max-nesting-depth':                      4,
+    'media-feature-parentheses-space-inside': 'always',
+
+    'no-eol-whitespace': [
+      true,
+      {
+        ignore: 'empty-lines'
+      }
+    ],
+
+    'number-leading-zero': 'never',
+
+    // @see https://github.com/hudochenkov/stylelint-order
+
+    'order/order': [
+      'at-variables',
+      'declarations',
+      'rules'
+    ],
+
+    'order/properties-alphabetical-order': null,
+
+    'order/properties-order': [
 
       // WordPress says: display, positioning, box model, colours/typography, other.
       // This is based directly on the examples used in grunt-wp-css.
+      // However, where order doesn't matter as much as grouping, the order is now alphabetical.
       // @see https://github.com/cedaro/grunt-wp-css/blob/develop/tasks/config/default.json
 
       // Display.
@@ -162,13 +185,13 @@ module.exports = {
       'background',
       'background-color',
       'background-image',
-      'background-repeat',
       'background-attachment',
+      'background-clip',
       'background-position',
       'background-position-x',
       'background-position-y',
-      'background-clip',
       'background-origin',
+      'background-repeat',
       'background-size',
       'box-decoration-break',
       'box-shadow',
@@ -246,21 +269,9 @@ module.exports = {
       'animation-direction',
       'backface-visibility',
       'text-rendering',
-      'pointer-events',
+      'pointer-events'
 
-    ], // Declaration-block-properties-order.
-    */
-
-    'indentation':       2,
-    'max-line-length':   120,
-    'max-nesting-depth': 4,
-
-    'no-eol-whitespace': [
-      true,
-      {
-        ignore: 'empty-lines'
-      }
-    ],
+    ], // Order/properties-order.
 
     // TODO: This rule no longer exists in stylelint and may need to be replaced.
     // @see https://github.com/stylelint/stylelint/issues/2229
