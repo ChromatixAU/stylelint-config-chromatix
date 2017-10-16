@@ -1,14 +1,19 @@
+
 'use strict';
 
 // TODO: This config is NOT complete or fully tested yet! DO NOT USE.
 
 module.exports = {
 
-  // @see https://www.npmjs.com/package/stylelint-config-sass-guidelines
-  // @see https://www.npmjs.com/package/stylelint-config-wordpress
+  // @see
+  // https://github.com/bjankord/stylelint-config-sass-guidelines/blob/master/index.js
+  // https://github.com/hudochenkov/stylelint-order
+  // https://github.com/kristerkari/stylelint-scss
+  // https://github.com/WordPress-Coding-Standards/stylelint-config-wordpress/blob/master/index.js
+  // https://github.com/stylelint/stylelint-config-recommended/blob/master/index.js
   extends: [
-    'stylelint-config-sass-guidelines',
-    'stylelint-config-wordpress'
+    'stylelint-config-sass-guidelines', // Includes stylelint-order & stylelint-scss.
+    'stylelint-config-wordpress' // Includes stylelint-config-recommended.
   ],
 
   // @see https://www.npmjs.com/package/stylelint-scss
@@ -18,21 +23,24 @@ module.exports = {
 
     // @see http://stylelint.io/user-guide/rules/
 
-    // If the Sass Guidelines & WordPress guidelines disagree, WordPress wins.
-    // If we think something is incorrect, really stupid, or just doesn't work, we can override it
-    // below.
+    // General guidelines for choosing rules:
+    // - If the Sass Guidelines & WordPress guidelines disagree, WordPress wins.
+    // - If we think something is incorrect, really stupid, or just doesn't work, we win. We have a
+    //   particular focus on trying to get parity across our PHP, JS and Sass rules where possible.
 
     // Set a rule to 'null' to disable it, NOT to false!
     // All rules are initially disabled by default, BUT we do need to set null on those we want to
     // override still, because our extends and plugins above will be enabling some of them.
 
+    // Please add comments to explain the rule changes if it's not clear what's happening.
+
     // Override stylelint-config-sass-guidelines disallowing @debug, as it can be helpful to warn
-    // of errors in mixin arguments!
+    // of errors in mixin arguments.
     'at-rule-blacklist': [],
 
     'at-rule-empty-line-before': null,
 
-    // Ignore common Sass at-rules.
+    // Allow common Sass at-rules (@....) through the at-rule-no-unknown rule.
     'at-rule-no-unknown': [
       true,
       {
