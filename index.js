@@ -66,7 +66,7 @@ module.exports = {
 
     'function-parentheses-space-inside':      'always',
     'indentation':                            2,
-    'max-line-length':                        120,
+    'max-line-length':                        100,
     'max-nesting-depth':                      4,
     'media-feature-parentheses-space-inside': 'always',
 
