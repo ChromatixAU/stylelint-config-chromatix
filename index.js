@@ -1,8 +1,6 @@
 
 'use strict';
 
-// TODO: This config is NOT complete or fully tested yet! DO NOT USE.
-
 module.exports = {
 
   // @see
