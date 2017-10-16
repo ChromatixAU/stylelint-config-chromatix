@@ -281,7 +281,9 @@ module.exports = {
     'selector-max-compound-selectors':             4,
 
     // This was useful, but it's currently applying to eg. &.test {} as well.
-    'selector-no-qualifying-type': null
+    'selector-no-qualifying-type': null,
+
+    'string-quotes': 'single'
 
   } // Rules.
 }; // Module.exports
