@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)  
 [Unreleased changes]
 
+## [0.1.2] - 2017-10-17
+
+- Fixed the prohibition on using @at-root.
+- Fixed minor JS linting issues that failed the last release.
+
 ## [0.1.1] - 2017-10-17
 
 - Fixed the rule allowing up to 120 chars on a line; it now allows 100 to match our other languages.
@@ -34,7 +39,9 @@ Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 
 - Initial release.
 
-[Unreleased changes]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.0...HEAD
+[Unreleased changes]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.2...HEAD
+[0.1.0]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.1...v0.1.2
+[0.1.0]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.0.3...v0.1.0
 [0.0.3]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.0.1...v0.0.2
