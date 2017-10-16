@@ -276,14 +276,14 @@ module.exports = {
     // @see https://github.com/stylelint/stylelint/issues/2229
     //'rule-nested-empty-line-before': null,
 
-    'scss/at-mixin-argumentless-call-parentheses':    'never',
-    'selector-max-compound-selectors':                 4,
-    'selector-pseudo-class-parentheses-space-inside': 'always',
+    'scss/at-mixin-argumentless-call-parentheses': 'never',
+    'selector-max-compound-selectors':             4,
 
     // This was useful, but it's currently applying to eg. &.test {} as well.
     'selector-no-qualifying-type': null,
 
-    'string-quotes': 'single'
+    'selector-pseudo-class-parentheses-space-inside': 'always',
+    'string-quotes':                                  'single'
 
   } // Rules.
 }; // Module.exports
