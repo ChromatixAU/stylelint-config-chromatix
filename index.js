@@ -16,9 +16,6 @@ module.exports = {
     'stylelint-config-wordpress' // Includes stylelint-config-recommended.
   ],
 
-  // @see https://www.npmjs.com/package/stylelint-scss
-  plugins: [ 'stylelint-scss' ],
-
   rules: {
 
     // @see http://stylelint.io/user-guide/rules/
