@@ -10,11 +10,11 @@ Based heavily on the [WordPress Coding Standards](https://github.com/WordPress-C
 
 Install globally to use on any project:
 
-    npm install --global @chromatix/stylelint-config-chromatix
+    yarn global add --global @chromatix/stylelint-config-chromatix
 
 Install locally to one project:
 
-    npm install --save-dev @chromatix/stylelint-config-chromatix
+    yarn add --dev @chromatix/stylelint-config-chromatix
 
 You'll also need to have [stylelint](https://stylelint.io) installed in the same manner.
 
@@ -33,7 +33,7 @@ Then:
   Run `stylelint **/*.scss`.
 
 * Using locally?  
-  Add `"lint:sass": "stylelint **/*.scss"` to your `package.json`'s `"scripts"` section, then run `npm run lint:sass`
+  Add `"lint:sass": "stylelint **/*.scss"` to your `package.json`'s `"scripts"` section, then run `yarn lint:sass`
 
 ## License
 
