@@ -272,8 +272,9 @@ module.exports = {
     // @see https://github.com/stylelint/stylelint/issues/2229
     //'rule-nested-empty-line-before': null,
 
-    'scss/at-mixin-argumentless-call-parentheses': 'never',
-    'selector-max-compound-selectors':             4,
+    'scss/at-import-no-partial-leading-underscore': null,
+    'scss/at-mixin-argumentless-call-parentheses':  'never',
+    'selector-max-compound-selectors':              4,
 
     // This was useful, but it's currently applying to eg. &.test {} as well.
     'selector-no-qualifying-type': null,
