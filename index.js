@@ -65,11 +65,9 @@ module.exports = {
       }
     ],
 
-    'function-parentheses-space-inside':      'always',
     'indentation':                            2,
     'max-line-length':                        100,
     'max-nesting-depth':                      4,
-    'media-feature-parentheses-space-inside': 'always',
 
     'no-eol-whitespace': [
       true,
@@ -77,8 +75,6 @@ module.exports = {
         ignore: 'empty-lines'
       }
     ],
-
-    'number-leading-zero': 'never',
 
     // @see https://github.com/hudochenkov/stylelint-order
 
