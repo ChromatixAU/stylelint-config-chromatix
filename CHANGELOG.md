@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)  
 [Unreleased changes]
 
+## [0.1.3] - 2017-10-18
+
+- Reverse the positions on function-parentheses-space-inside, media-feature-parentheses-space-inside and number-leading-zero to better match WordPress' examples and Sass Guidelines.
+- Updated upstream dependencies.
+
 ## [0.1.2] - 2017-10-17
 
 - Fixed the prohibition on using @at-root.
@@ -25,15 +30,15 @@ Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 
 ## [0.0.3] - 2017-10-13
 
-- Fixed indentation rule to require 2 spaces instead of tabs
-- Fixed devDependencies for linting, as well as ignoring test coverage reports
+- Fixed indentation rule to require 2 spaces instead of tabs.
+- Fixed devDependencies for linting, as well as ignoring test coverage reports.
 
 ## [0.0.2] - 2017-10-13
 
-- Added linting & CI
-- Updated README documentation
-- Removed stylelint rules that have been removed since our original config was written
-- Fixed linting issues and tests
+- Added linting & CI.
+- Updated README documentation.
+- Removed stylelint rules that have been removed since our original config was written.
+- Fixed linting issues and tests.
 
 ## [0.0.1] - 2017-10-12
 
