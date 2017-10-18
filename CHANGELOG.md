@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)  
 [Unreleased changes]
 
+## [0.1.4] - 2017-10-18
+
+- Remove the requirement for @import to not include leading underscores, as it's sometimes needed for globbing.
+
 ## [0.1.3] - 2017-10-18
 
 - Reverse the positions on function-parentheses-space-inside, media-feature-parentheses-space-inside and number-leading-zero to better match WordPress' examples and Sass Guidelines.
@@ -44,7 +48,8 @@ Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 
 - Initial release.
 
-[Unreleased changes]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.3...HEAD
+[Unreleased changes]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.4...HEAD
+[0.1.4]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.0...v0.1.1
