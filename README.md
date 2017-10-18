@@ -10,7 +10,7 @@ Based heavily on the [WordPress Coding Standards](https://github.com/WordPress-C
 
 Install globally to use on any project:
 
-    yarn global add --global @chromatix/stylelint-config-chromatix
+    yarn global add @chromatix/stylelint-config-chromatix
 
 Install locally to one project:
 
