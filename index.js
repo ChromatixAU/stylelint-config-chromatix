@@ -279,8 +279,7 @@ module.exports = {
     // This was useful, but it's currently applying to eg. &.test {} as well.
     'selector-no-qualifying-type': null,
 
-    'selector-pseudo-class-parentheses-space-inside': 'always',
-    'string-quotes':                                  'single'
+    'string-quotes': 'single'
 
   } // Rules.
 }; // Module.exports
