@@ -1,9 +1,13 @@
 # Change Log
 
-All notable changes to this project will be documented in this file  
-This project adheres to [Semantic Versioning](http://semver.org/)  
-Formatting help at [keepachangelog.com](http://keepachangelog.com/)  
+All notable changes to this project will be documented in this file
+This project adheres to [Semantic Versioning](http://semver.org/)
+Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
+
+## [0.1.5] - 2017-10-20
+
+- Removed the requirement of space inside selectors, media queries and pseudo selector parentheses. Moved the margin properties to be after padding in the properties order. This means the properties follow the box-model naturally.
 
 ## [0.1.4] - 2017-10-18
 
