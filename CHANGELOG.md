@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
+## [0.1.6] - 2017-10-20
+
+- Fixed issue with max-nesting-depth and mixins contributing to the depth (eg. Media Query mixin)
+
 ## [0.1.5] - 2017-10-20
 
 - Removed the requirement of space inside selectors, media queries and pseudo selector parentheses. Moved the margin properties to be after padding in the properties order. This means the properties follow the box-model naturally.
