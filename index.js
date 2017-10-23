@@ -3,6 +3,9 @@
 
 module.exports = {
 
+  // Ignore magic numbers in config for eslint
+  /* eslint-disable no-magic-numbers */
+
   // @see
   // https://github.com/bjankord/stylelint-config-sass-guidelines/blob/master/index.js
   // https://github.com/hudochenkov/stylelint-order
@@ -67,7 +70,12 @@ module.exports = {
 
     'indentation':       2,
     'max-line-length':   100,
-    'max-nesting-depth': 4,
+    'max-nesting-depth': [
+      4,
+      {
+        ignoreAtRules: [ 'include' ]
+      }
+    ],
 
     'no-eol-whitespace': [
       true,
