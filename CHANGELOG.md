@@ -5,7 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
-## [0.1.6] - 2017-10-20
+# [0.1.7] - 2017-10-24
+
+- Added @extend to list of known at-rules.
+
+## [0.1.6] - 2017-10-23
 
 - Fixed issue with max-nesting-depth and mixins contributing to the depth (eg. Media Query mixin)
 
