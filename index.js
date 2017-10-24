@@ -48,6 +48,7 @@ module.exports = {
           'debug',
           'else',
           'elseif',
+          'extend',
           'for',
           'function',
           'if',
