@@ -35,6 +35,10 @@ Then:
 * Using locally?  
   Add `"lint:sass": "stylelint \"**/*.scss\""` to your `package.json`'s `"scripts"` section, then run `yarn lint:sass`
 
+### Additional Tips
+
+* Want stylelint to list the filenames it is linting, even if everything passes? Add `--formatter verbose` to your `stylelint` command.
+
 ## See also
 
 * [eslint-config-chromatix](https://github.com/ChromatixAU/eslint-config-chromatix)

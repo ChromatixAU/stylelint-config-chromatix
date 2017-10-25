@@ -14,7 +14,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ignore-pattern coverage/ **/*.js *.js",
+    "lint": "set DEBUG=eslint:cli-engine && eslint --ignore-pattern coverage/ \"**/*.js\"",
     "test": "jest --verbose --coverage"
   },
   "jest": {
