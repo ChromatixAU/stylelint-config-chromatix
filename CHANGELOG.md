@@ -5,7 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 [Unreleased changes]
 
-# [0.1.7] - 2017-10-24
+## [0.1.8] - 2017-10-26
+
+- Updates to documentation and linting/CI configuration
+- Made tests a little more granular
+
+## [0.1.7] - 2017-10-24
 
 - Added @extend to list of known at-rules.
 
@@ -60,7 +65,11 @@ Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 
 - Initial release.
 
-[Unreleased changes]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.4...HEAD
+[Unreleased changes]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.8...HEAD
+[0.1.8]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.7...v0.1.8
+[0.1.7]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.6...v0.1.7
+[0.1.6]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.5...v0.1.6
+[0.1.5]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.4...v0.1.5
 [0.1.4]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.1...v0.1.2
