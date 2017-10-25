@@ -14,7 +14,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "set DEBUG=eslint:cli-engine && eslint --ignore-pattern coverage/ \"**/*.js\"",
+    "lint": "cross-env DEBUG=eslint:cli-engine eslint --ignore-pattern coverage/ \"**/*.js\"",
     "test": "jest --verbose --coverage"
   },
   "jest": {
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@chromatix/eslint-config-chromatix": "^0.0.8",
+    "cross-env": "^5.1.0",
     "eslint": "^4.9.0",
     "is-plain-obj": "^1.1.0",
     "jest": "^21.2.1"

@@ -1,9 +1,14 @@
+/**
+ * Main configuration for stylelint shareable configuration stylelint-config-chromatix.
+ *
+ * @author Tim Malone <tim.malone@chromatix.com.au>
+ */
 
 'use strict';
 
 module.exports = {
 
-  // Ignore magic numbers in config for eslint
+  // Ignore magic numbers in config for ESLint.
   /* eslint-disable no-magic-numbers */
 
   // @see
