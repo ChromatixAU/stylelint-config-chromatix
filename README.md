@@ -30,10 +30,15 @@ Add this to your `.stylelintrc.js` file:
 
 Then:
 * Using globally?  
-  Run `stylelint **/*.scss`.
+  Run `stylelint "**/*.scss"`.
 
 * Using locally?  
-  Add `"lint:sass": "stylelint **/*.scss"` to your `package.json`'s `"scripts"` section, then run `yarn lint:sass`
+  Add `"lint:sass": "stylelint \"**/*.scss\""` to your `package.json`'s `"scripts"` section, then run `yarn lint:sass`
+
+## See also
+
+* [eslint-config-chromatix](https://github.com/ChromatixAU/eslint-config-chromatix)
+* [phpcs-config-chromatix](https://github.com/ChromatixAU/phpcs-config-chromatix)
 
 ## License
 

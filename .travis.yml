@@ -5,6 +5,7 @@ sudo: required
 
 # Speed up subsequent builds by caching dependencies.
 cache:
+  yarn: true
   directories:
     - node_modules
 
@@ -33,7 +34,7 @@ matrix:
   fast_finish: true
 
 install:
-  - yarn
+  - travis_retry yarn
 
 script:
   - yarn lint
