@@ -287,8 +287,17 @@ module.exports = {
     //'rule-nested-empty-line-before': null,
 
     'scss/at-import-no-partial-leading-underscore': null,
-    'scss/at-mixin-argumentless-call-parentheses':  'never',
-    'selector-max-compound-selectors':              4,
+
+    // Stylelint-config-sass-guidelines already adds this rule, but we include the 'css' extension
+    // to ensure that live @import statements don't accidentally leak through (they're bad for
+    // performance!)
+    'scss/at-import-partial-extension-blacklist': [
+      'scss',
+      'css'
+    ],
+
+    'scss/at-mixin-argumentless-call-parentheses': 'never',
+    'selector-max-compound-selectors':             4,
 
     // This was useful, but it's currently applying to eg. &.test {} as well.
     'selector-no-qualifying-type': null,
