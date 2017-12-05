@@ -53,13 +53,16 @@ module.exports = {
           'debug',
           'else',
           'elseif',
+          'error',
           'extend',
           'for',
           'function',
           'if',
           'include',
           'mixin',
-          'return'
+          'return',
+          'warn',
+          'while'
         ]
       }
     ],
