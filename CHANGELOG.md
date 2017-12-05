@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)  
 [Unreleased changes]
 
+## [0.1.10] - 2017-12-06
+
+- Add additional at-rules `error`, `warn` and `while`
+
 ## [0.1.9] - 2017-12-04
 
 - Prevent .css for @import's, as it's bad for performance
@@ -69,7 +73,8 @@ Formatting help at [keepachangelog.com](http://keepachangelog.com/)
 
 - Initial release.
 
-[Unreleased changes]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.9...HEAD
+[Unreleased changes]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.10...HEAD
+[0.1.10]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.9...v0.1.10
 [0.1.9]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.8...v0.1.9
 [0.1.8]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.7...v0.1.8
 [0.1.7]: https://github.com/ChromatixAU/stylelint-config-chromatix/compare/v0.1.6...v0.1.7
