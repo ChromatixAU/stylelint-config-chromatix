@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)  
 [Unreleased changes]
 
+## [0.1.11] - 2018-08-16
+
+- Use Stylelint 9.4.0 to fix double backslash issue.
+
 ## [0.1.10] - 2017-12-06
 
 - Add additional at-rules `error`, `warn` and `while`
