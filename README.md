@@ -6,6 +6,14 @@ Based heavily on the [WordPress Coding Standards](https://github.com/WordPress-C
 
 **This config is still in development.** If you have suggestions for improvement or if you disagree with anything this config makes you do, feel free to file an issue.
 
+## Publishing to NPM/Yarn
+
+**NOTE: This package is available on NPM and once a Pull request has been merged to master the master branch needs to be published to npm/yarn to reflect any changes or updates.**
+
+Consult LastPass or Julian for where to find login details for https://www.npmjs.com
+
+Details for how to publish the config to npm can be found here: https://yarnpkg.com/lang/en/docs/publishing-a-package/
+
 ## Installation
 
 Install globally to use on any project:
