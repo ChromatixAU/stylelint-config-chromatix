@@ -1,6 +1,6 @@
 {
   "name": "@chromatix/stylelint-config-chromatix",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Chromatix custom config for stylelint. Based heavily on the WordPress Coding Standards but with some of our own too.",
   "homepage": "https://github.com/ChromatixAU/stylelint-config-chromatix#readme",
   "author": "Tim Malone <tim.malone@chromatix.com.au>",
@@ -30,7 +30,7 @@
     "javascript"
   ],
   "dependencies": {
-    "stylelint": "^8.2.0",
+    "stylelint": "^9.4.0",
     "stylelint-config-sass-guidelines": "^3.1.0",
     "stylelint-config-wordpress": "^12.0.0"
   },
