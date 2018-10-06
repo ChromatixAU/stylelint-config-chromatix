@@ -30,8 +30,8 @@
     "javascript"
   ],
   "dependencies": {
-    "stylelint": "^9.5.0",
-    "stylelint-config-sass-guidelines": "^3.1.0",
+    "stylelint": "^9.0.0",
+    "stylelint-config-sass-guidelines": "^5.2.0",
     "stylelint-config-wordpress": "^13.1.0"
   },
   "devDependencies": {
