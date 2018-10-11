@@ -5,6 +5,14 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)  
 [Unreleased changes]
 
+## [0.1.14] - 2018-10-11
+
+- Remove selector-pseudo-element-colon-notation rule
+
+## [0.1.13] - 2018-10-10
+
+- Update stylelint versions and dependent wordpress default style rules
+
 ## [0.1.11] - 2018-08-16
 
 - Use Stylelint 9.4.0 to fix double backslash issue.

@@ -123,8 +123,8 @@ module.exports = {
     'selector-max-compound-selectors':             6,
 
     // This was useful, but it's currently applying to eg. &.test {} as well.
-    'selector-no-qualifying-type': null,
-
+    'selector-no-qualifying-type':                 null,
+    'selector-pseudo-element-colon-notation':      null,
     'string-quotes': 'single'
 
   } // Rules.
