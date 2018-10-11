@@ -121,6 +121,7 @@ module.exports = {
 
     'scss/at-mixin-argumentless-call-parentheses': 'never',
     'selector-max-compound-selectors':             6,
+    'selector-pseudo-element-colon-notation':      null
 
     // This was useful, but it's currently applying to eg. &.test {} as well.
     'selector-no-qualifying-type': null,
