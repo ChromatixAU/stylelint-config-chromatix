@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/)
 Formatting help at [keepachangelog.com](http://keepachangelog.com/)  
 [Unreleased changes]
 
+## [0.1.15] - 2018-10-17
+
+- Remove no-descending-specificity rule
+
 ## [0.1.14] - 2018-10-11
 
 - Remove selector-pseudo-element-colon-notation rule
