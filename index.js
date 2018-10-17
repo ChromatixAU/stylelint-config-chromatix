@@ -85,7 +85,7 @@ module.exports = {
         ignoreAtRules: [ 'include' ]
       }
     ],
-
+    'no-descending-specificity': null,
     'no-eol-whitespace': [
       true,
       {
