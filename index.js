@@ -79,12 +79,7 @@ module.exports = {
 
     'indentation':       2,
     'max-line-length':   100,
-    'max-nesting-depth': [
-      4,
-      {
-        ignoreAtRules: [ 'include' ]
-      }
-    ],
+    'max-nesting-depth': null, 
     'no-descending-specificity': null,
     'no-eol-whitespace': [
       true,
