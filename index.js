@@ -77,11 +77,11 @@ module.exports = {
       }
     ],
 
-    'indentation':       2,
-    'max-line-length':   100,
-    'max-nesting-depth': null, 
+    'indentation':               2,
+    'max-line-length':           100,
+    'max-nesting-depth':         null,
     'no-descending-specificity': null,
-    'no-eol-whitespace': [
+    'no-eol-whitespace':         [
       true,
       {
         ignore: 'empty-lines'
@@ -118,9 +118,9 @@ module.exports = {
     'selector-max-compound-selectors':             6,
 
     // This was useful, but it's currently applying to eg. &.test {} as well.
-    'selector-no-qualifying-type':                 null,
-    'selector-pseudo-element-colon-notation':      null,
-    'string-quotes': 'single'
+    'selector-no-qualifying-type':            null,
+    'selector-pseudo-element-colon-notation': null,
+    'string-quotes':                          'single'
 
   } // Rules.
 }; // Module.exports
