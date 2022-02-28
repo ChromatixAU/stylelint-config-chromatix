@@ -1,6 +1,6 @@
 {
   "name": "@chromatix/stylelint-config-chromatix",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Chromatix custom config for stylelint. Based heavily on the WordPress Coding Standards but with some of our own too.",
   "homepage": "https://github.com/ChromatixAU/stylelint-config-chromatix#readme",
   "author": "Tim Malone <tim.malone@chromatix.com.au>",
