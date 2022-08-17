@@ -122,6 +122,7 @@ module.exports = {
     'selector-no-qualifying-type':            null,
     'selector-pseudo-element-colon-notation': null,
     'string-quotes':                          'single'
+    'selector-max-id':                        1
 
   } // Rules.
 }; // Module.exports
