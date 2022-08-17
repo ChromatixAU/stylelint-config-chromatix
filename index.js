@@ -121,7 +121,7 @@ module.exports = {
     // This was useful, but it's currently applying to eg. &.test {} as well.
     'selector-no-qualifying-type':            null,
     'selector-pseudo-element-colon-notation': null,
-    'string-quotes':                          'single'
+    'string-quotes':                          'single',
     'selector-max-id':                        1
 
   } // Rules.
